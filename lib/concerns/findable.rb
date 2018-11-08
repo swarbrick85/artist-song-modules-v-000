@@ -1,12 +1,14 @@
 module Findable 
   
-  def find_by_name(name)
-    @@"#{class.name.downcase}s".detect{|a| a.name == name}
-  end
+  @@all = []
   
   def find_by_name(name)
-    @@songs.detect{|a| a.name == name}
+    @@all.detect{|a| a.name == name}
   end
+  
+#  def find_by_name(name)
+#    @@songs.detect{|a| a.name == name}
+#  end
   
 end 
 
