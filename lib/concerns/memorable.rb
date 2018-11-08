@@ -12,7 +12,6 @@ end
   module InstanceMethods
 def initialize
     self.class.all << self
-    @songs = []
   end
 end 
 end 
